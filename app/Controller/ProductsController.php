@@ -12,4 +12,10 @@ class ProductsController extends AppController {
 			'conditions' => array('Product.id' => 1)
 		)));
 	}
+
+	public function admin_index() {
+		$this->set('product', $this->Product->find('first', array(
+			'conditions' => array('Product.id' => 1)
+		)));
+	}
 }
