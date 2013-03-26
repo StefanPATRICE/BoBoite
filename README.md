@@ -1,39 +1,48 @@
-CakePHP
-=======
+README
+======
+![PrestaShop](http://www.prestashop.com/images/banners/general/prestashop_728x90.png "PrestaShop")
 
-[![CakePHP](http://cakephp.org/img/cake-logo.png)](http://www.cakephp.org)
+PREPARATION
+--------
 
-CakePHP is a rapid development framework for PHP which uses commonly known design patterns like Active Record, Association Data Mapping, Front Controller and MVC.
-Our primary goal is to provide a structured framework that enables PHP users at all levels to rapidly develop robust web applications, without any loss to flexibility.
+To install PrestaShop, you need a remote web server or on your computer (MAMP), with access to a database like MySQL.
+You'll need access to phpMyAdmin to create a database and to indicate the information in the database in the installer.
 
-Some Handy Links
-----------------
+If you do not host and unable to create your store, we offer a turnkey store, which lets you create your online store in less than 10 minutes without any technical knowledge.
+We invite you to visit: [http://www.prestabox.com][1]
 
-[CakePHP](http://www.cakephp.org) - The rapid development PHP framework
+INSTALLATION
+--------
 
-[Cookbook](http://book.cakephp.org) - THE Cake user documentation; start learning here!
+Simply go to your PrestaShop web directory and use installer :-)
 
-[Plugins](http://plugins.cakephp.org/) - A repository of extensions to the framework
+If you have any PHP error, perhaps you don't have PHP5 or you need to activate it on your web host.
+Please go to our forum to find pre-installation settings (PHP 5, htaccess) for certain hosting services (1&1, Free, Lycos, OVH, Infomaniak, Amen, GoDaddy, etc).
 
-[The Bakery](http://bakery.cakephp.org) - Tips, tutorials and articles
+English webhost [specifics settings][2]
 
-[API](http://api.cakephp.org) - A reference to Cake's classes
 
-[CakePHP TV](http://tv.cakephp.org) - Screen casts from events and video tutorials
+If you don't find any solution to launch installer, please post on [our forum][3]
 
-[The Cake Software Foundation](http://cakefoundation.org/) - promoting development related to CakePHP
 
-Get Support!
-------------
+There are always solutions for your issues ;-)
 
-[Our Google Group](http://groups.google.com/group/cake-php) - community mailing list and forum
+DOCUMENTATION
+--------
 
-[#cakephp](http://webchat.freenode.net/?channels=#cakephp) on irc.freenode.net - Come chat with us, we have cake.
+For any extra documentation (how-to), please read our [Online documentation][4]
 
-[Q & A](http://ask.cakephp.org/) - Ask questions here, all questions welcome
 
-[Lighthouse](http://cakephp.lighthouseapp.com/) - Got issues? Please tell us!
+FORUMS
+--------
 
-[![Bake Status](https://secure.travis-ci.org/cakephp/cakephp.png?branch=master)](http://travis-ci.org/cakephp/cakephp)
+You can also discuss, help and contribute with PrestaShop community on [our forums][5]
 
-![Cake Power](https://raw.github.com/cakephp/cakephp/master/lib/Cake/Console/Templates/skel/webroot/img/cake.power.gif)
+
+Thanks for downloading and using PrestaShop e-commerce Open-source solution!
+
+[1]: http://www.prestabox.com
+[2]: http://www.prestashop.com/forums/topic/2946-pre-installation-settings-php-5-htaccess-for-certain-hosting-services/
+[3]: http://www.prestashop.com/forums/forum/7-installing-prestashop/
+[4]: http://doc.prestashop.com
+[5]: http://www.prestashop.com/forums/
