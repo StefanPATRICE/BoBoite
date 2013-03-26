@@ -46,8 +46,13 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 		<div id="content">
 			<div id="nav">
 				<?php echo $this->Html->link('Produits',
-				array('controller' => 'Products', 'action' => 'index')); ?> - <?php echo $this->Html->link('Admin Produits',
 				array('controller' => 'Products', 'action' => 'index')); ?>
+				-
+				<?php echo $this->Html->link('Admin Produits',
+				array('controller' => 'Products', 'action' => 'admin_index')); ?>
+				-
+				<?php echo $this->Html->link('Admin Declinaisons',
+				array('controller' => 'DeclinationAttribute', 'action' => 'admin_index')); ?>
 				<br />
 				<br />
 				<br />
