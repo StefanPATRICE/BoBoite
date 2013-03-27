@@ -548,14 +548,14 @@ var fieldRequired = '{l s='Please fill in all required fields, then save the cus
 									</div>
 									<div class="clear_product_desc">&nbsp;</div>
 								</div>
-								
+
 								<p class="clearfix" style="margin-top:5px">
 									<a class="button" href="{$accessoryLink|escape:'htmlall':'UTF-8'}" title="{l s='View'}">{l s='View'}</a>
 									{if !$PS_CATALOG_MODE}
 									<a class="exclusive button ajax_add_to_cart_button" href="{$link->getPageLink('cart', true, NULL, "qty=1&amp;id_product={$accessory.id_product|intval}&amp;token={$static_token}&amp;add")}" rel="ajax_id_product_{$accessory.id_product|intval}" title="{l s='Add to cart'}">{l s='Add to cart'}</a>
 									{/if}
 								</p>
-								
+
 							</li>
 						{/if}
 					{/foreach}

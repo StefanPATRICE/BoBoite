@@ -739,13 +739,16 @@ class FrontControllerCore extends Controller
 		}
 		$this->addCSS(_THEME_CSS_DIR_.'global.css', 'all');
 		$this->addCSS(_THEME_CSS_DIR_.'footer.css', 'all');
+		$this->addCSS(_THEME_CSS_DIR_.'normalize.css', 'all');
+		$this->addCSS(_THEME_CSS_DIR_.'home.css', 'all');
 		$this->addCSS(_THEME_CSS_DIR_.'font/brown-light.css', 'all');
 		$this->addCSS(_THEME_CSS_DIR_.'font/neutrafacetext-boldalt.css', 'all');
 		$this->addCSS(_THEME_CSS_DIR_.'font/neutrafacetext-demialt.css', 'all');
 		$this->addCSS(_THEME_CSS_DIR_.'font/neutrafacetext-lightalt.css', 'all');
-		$this->addJS(_PS_JS_DIR_.'footer.js');
 		$this->addjquery();
 		$this->addjqueryPlugin('easing');
+		$this->addJS(_THEME_JS_DIR_.'home.js');
+		$this->addJS(_THEME_JS_DIR_.'popup.js');
 		$this->addJS(_PS_JS_DIR_.'tools.js');
 
 		if (Tools::isSubmit('live_edit') && Tools::getValue('ad') && Tools::getAdminToken('AdminModulesPositions'.(int)Tab::getIdFromClassName('AdminModulesPositions').(int)Tools::getValue('id_employee')))

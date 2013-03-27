@@ -1,5 +1,4 @@
 #cart_block { display: none; float: right; }
-#cart_block .block_content { position: absolute; top: 10px; left: 10px; width: 880px; background: green; z-index: 1; }
 
 #left_column #cart_block, #right_column #cart_block {
 }
@@ -16,7 +15,7 @@
 	cursor: pointer
 }
 
-#cart_block  .block_content {padding:8px 8px 16px 8px;}
+#cart_block .block_content { padding: 64px 16px 86px 16px;}
 
 #cart_block #cart_block_summary {display:none}
 #cart_block .quantity-formated {

@@ -46,7 +46,7 @@
 				<p class="s_title_block"><a href="{$product->getLink()}" title="{$product->name|truncate:32:'...'|escape:'htmlall':'UTF-8'}">{$product->name|truncate:27:'...'|escape:'htmlall':'UTF-8'}</a></p>
 				<div class="product_desc"><a href="{$product->getLink()}">{$product->description_short|strip_tags|truncate:60:'...'}</a></div>
 				<a class="lnk_more" href="{$product->getLink()}" title="{l s='View'}">{l s='View'}</a>
-				
+
 				<div class="comparison_product_infos">
 					<div class="prices_container">
 					{if isset($product->show_price) && $product->show_price && !isset($restricted_country_mode) && !$PS_CATALOG_MODE}
