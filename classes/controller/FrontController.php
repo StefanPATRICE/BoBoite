@@ -738,6 +738,12 @@ class FrontControllerCore extends Controller
 			return true;
 		}
 		$this->addCSS(_THEME_CSS_DIR_.'global.css', 'all');
+		$this->addCSS(_THEME_CSS_DIR_.'footer.css', 'all');
+		$this->addCSS(_THEME_CSS_DIR_.'font/brown-light.css', 'all');
+		$this->addCSS(_THEME_CSS_DIR_.'font/neutrafacetext-boldalt.css', 'all');
+		$this->addCSS(_THEME_CSS_DIR_.'font/neutrafacetext-demialt.css', 'all');
+		$this->addCSS(_THEME_CSS_DIR_.'font/neutrafacetext-lightalt.css', 'all');
+		$this->addJS(_PS_JS_DIR_.'footer.js');
 		$this->addjquery();
 		$this->addjqueryPlugin('easing');
 		$this->addJS(_PS_JS_DIR_.'tools.js');

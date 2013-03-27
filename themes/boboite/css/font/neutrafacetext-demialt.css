@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'NeutrafaceTextDemiAlt';
+    src: url('neutrafacetext-demialt.eot');
+    src: url('neutrafacetext-demialt.eot') format('embedded-opentype'),
+         url('neutrafacetext-demialt.woff') format('woff'),
+         url('neutrafacetext-demialt.ttf') format('truetype'),
+         url('neutrafacetext-demialt.svg#NeutrafaceTextDemiAlt') format('svg');
+}

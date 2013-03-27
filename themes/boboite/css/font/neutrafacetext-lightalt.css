@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'NeutrafaceTextLightAlt';
+    src: url('neutrafacetext-lightalt.eot');
+    src: url('neutrafacetext-lightalt.eot') format('embedded-opentype'),
+         url('neutrafacetext-lightalt.woff') format('woff'),
+         url('neutrafacetext-lightalt.ttf') format('truetype'),
+         url('neutrafacetext-lightalt.svg#NeutrafaceTextLightAlt') format('svg');
+}

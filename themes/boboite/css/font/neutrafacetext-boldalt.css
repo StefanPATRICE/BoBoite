@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'NeutrafaceTextBoldAlt';
+    src: url('neutrafacetext-boldalt.eot');
+    src: url('neutrafacetext-boldalt.eot') format('embedded-opentype'),
+         url('neutrafacetext-boldalt.woff') format('woff'),
+         url('neutrafacetext-boldalt.ttf') format('truetype'),
+         url('neutrafacetext-boldalt.svg#NeutrafaceTextBoldAlt') format('svg');
+}
