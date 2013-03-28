@@ -1,0 +1,159 @@
+body{
+	background: #f5f5f5;
+	font-family: 'BrownLight';
+	font-size: 12px;
+	min-width: 1200px;
+	position: relative;
+}
+
+
+.content{
+	width: 960px;
+	margin: auto;
+}
+
+
+#text-content{
+	position: absolute;
+	z-index: 15;
+	position: fixed;
+	width: 960px;
+	margin: auto;
+	right: 0;
+}
+
+#text-content .text{
+	width: 500px;
+	position: absolute;
+	opacity: 0;
+	top: 168px;
+	right: 14px;
+
+	-webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s ;
+    transition: all 0.5s;
+}
+
+#text-content .active{
+	position: absolute;
+	opacity: 1;
+}
+
+#text-content .text h2{
+	font-family: 'NeutrafaceTextBoldAlt';
+	font-size: 40px;
+	text-transform: uppercase;
+	color: #ffffff;
+	margin-bottom: 0;
+}
+
+#text-content .text h2, #text-content .text p{
+	/*-webkit-transform: scale(0.8, 0.8);
+	-moz-transform: scale(0.8, 0.8);
+	-o-transform: scale(0.8, 0.8);
+	transform: scale(0.8, 0.8);*/
+
+	-webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s ;
+    transition: all 0.8s;
+}
+
+#text-content .active h2, #text-content .text p{
+/*	-webkit-transform: scale(1, 1);
+	-moz-transform: scale(1, 1);
+	-o-transform: scale(1, 1);
+	transform: scale(1, 1);*/
+
+	-webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s ;
+    transition: all 0.5s;
+}
+
+#text-content .headline{
+	color: #e38720;
+	font-family: 'NeutrafaceTextLightAlt';
+	font-size: 19px;
+	text-transform: uppercase;
+	text-decoration: underline;
+	margin-top: 0;
+
+}
+
+#container{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: #e4e1dc url('../img/bg.jpg');
+}
+
+.wrapper{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 1;
+	display: none;
+}
+
+.wrapper.active{
+	z-index: 10;
+	display: block;
+}
+
+.wrapper img{
+	position: absolute;
+	top: 0px;
+	left: 0;
+}
+
+
+
+
+
+
+
+/* MY ACCOUNT */
+
+
+.popupblockuser h3{
+	font-family: 'NeutrafaceTextBoldAlt';
+	font-size: 25px;
+	text-transform: uppercase;
+	color: #dda48c;
+	margin-bottom: 0;
+}
+
+/*.popupblockuser h3{
+	color: #e38720;
+	font-family: 'NeutrafaceTextLightAlt';
+	font-size: 19px;
+	text-transform: uppercase;
+	text-decoration: underline;
+}*/
+
+label{
+	color: #989898;
+	font-family: 'NeutrafaceTextDemiAlt';
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+.popupblockuser #center_column{
+	text-align: center;
+}
+
+fieldset{
+	border: none;
+}
+
+input[type="button"], input[type="submit"], .lost_password a{
+	border: none;
+	background: none;
+	color: #989898;
+	font-family: 'NeutrafaceTextDemiAlt';
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
