@@ -70,15 +70,22 @@ var delete_txt = '{l s='Delete' mod='blockcart' js=1}';
 	<!-- block list of products -->
 	<div id="cart_block_list" class="{if isset($colapseExpandStatus) && $colapseExpandStatus eq 'expanded' || !$ajax_allowed || !isset($colapseExpandStatus)}expanded{else}collapsed{/if}">
 	{if $products}
+		<div class="head dl">
+			<span class="quantity-formated"><span class="quantity">{l s='Quantity' mod='blockcart'}</span></span>
+				<span class="cart_block_product_name">
+                    {l s='Produit' mod='blockcart'}</span>
+			<span class="remove_link">{if !isset($customizedDatas.$productId.$productAttributeId) && ($product.total > 0)}<a rel="nofollow" class="ajax_cart_block_remove_link" href="{$link->getPageLink('cart', true, NULL, "delete&amp;id_product={$product.id_product}&amp;ipa={$product.id_product_attribute}&amp;id_address_delivery={$product.id_address_delivery}&amp;token={$static_token}", true)}" title="{l s='remove this product from my cart' mod='blockcart'}">&nbsp;X</a>{/if}</span>
+			<span class="price">{l s='Price' mod='blockcart'}</span>
+		</div>
 		<dl class="products">
 		{foreach from=$products item='product' name='myLoop'}
 			{assign var='productId' value=$product.id_product}
 			{assign var='productAttributeId' value=$product.id_product_attribute}
 			<dt id="cart_block_product_{$product.id_product}_{if $product.id_product_attribute}{$product.id_product_attribute}{else}0{/if}_{if $product.id_address_delivery}{$product.id_address_delivery}{else}0{/if}" class="{if $smarty.foreach.myLoop.first}first_item{elseif $smarty.foreach.myLoop.last}last_item{else}item{/if}">
-				<span class="quantity-formated"><span class="quantity">{$product.cart_quantity}</span>x</span>
+				<span class="quantity-formated">0<span class="quantity">{$product.cart_quantity}</span></span>
 				<a class="cart_block_product_name" href="{$link->getProductLink($product, $product.link_rewrite, $product.category, null, null, $product.id_shop, $product.id_product_attribute)}" title="{$product.name|escape:html:'UTF-8'}">
 				{$product.name|truncate:13:'...'|escape:html:'UTF-8'}</a>
-				<span class="remove_link">{if !isset($customizedDatas.$productId.$productAttributeId) && ($product.total > 0)}<a rel="nofollow" class="ajax_cart_block_remove_link" href="{$link->getPageLink('cart', true, NULL, "delete&amp;id_product={$product.id_product}&amp;ipa={$product.id_product_attribute}&amp;id_address_delivery={$product.id_address_delivery}&amp;token={$static_token}", true)}" title="{l s='remove this product from my cart' mod='blockcart'}">&nbsp;</a>{/if}</span>
+				<span class="remove_link">{if !isset($customizedDatas.$productId.$productAttributeId) && ($product.total > 0)}<a rel="nofollow" class="ajax_cart_block_remove_link" href="{$link->getPageLink('cart', true, NULL, "delete&amp;id_product={$product.id_product}&amp;ipa={$product.id_product_attribute}&amp;id_address_delivery={$product.id_address_delivery}&amp;token={$static_token}", true)}" title="{l s='remove this product from my cart' mod='blockcart'}">X</a>{/if}</span>
 				<span class="price">
 					{if $product.total > 0}
 						{if $priceDisplay == $smarty.const.PS_TAX_EXC}{displayWtPrice p="`$product.total`"}{else}{displayWtPrice p="`$product.total_wt`"}{/if}
@@ -98,7 +105,7 @@ var delete_txt = '{l s='Delete' mod='blockcart' js=1}';
 				<ul class="cart_block_customizations" id="customization_{$productId}_{$productAttributeId}">
 					{foreach from=$customizedDatas.$productId.$productAttributeId[$product.id_address_delivery] key='id_customization' item='customization' name='customizations'}
 						<li name="customization">
-							<div class="deleteCustomizableProduct" id="deleteCustomizableProduct_{$id_customization|intval}_{$product.id_product|intval}_{$product.id_product_attribute|intval}_{$product.id_address_delivery|intval}"><a class="ajax_cart_block_remove_link" href="{$link->getPageLink('cart', true, NULL, "delete&amp;id_product={$product.id_product|intval}&amp;ipa={$product.id_product_attribute|intval}&amp;id_customization={$id_customization}&amp;token={$static_token}", true)}" rel="nofollow"> </a></div>
+							<div class="deleteCustomizableProduct" id="deleteCustomizableProduct_{$id_customization|intval}_{$product.id_product|intval}_{$product.id_product_attribute|intval}_{$product.id_address_delivery|intval}"><a class="ajax_cart_block_remove_link" href="{$link->getPageLink('cart', true, NULL, "delete&amp;id_product={$product.id_product|intval}&amp;ipa={$product.id_product_attribute|intval}&amp;id_customization={$id_customization}&amp;token={$static_token}", true)}" rel="nofollow"> X</a></div>
 							<span class="quantity-formated"><span class="quantity">{$customization.quantity}</span>x</span>{if isset($customization.datas.$CUSTOMIZE_TEXTFIELD.0)}
 							{$customization.datas.$CUSTOMIZE_TEXTFIELD.0.value|escape:html:'UTF-8'|replace:"<br />":" "|truncate:28}
 							{else}
@@ -139,8 +146,7 @@ var delete_txt = '{l s='Delete' mod='blockcart' js=1}';
 		
 		<p id="cart-prices">
 			<span id="cart_block_shipping_cost" class="price ajax_cart_shipping_cost">{$shipping_cost}</span>
-			<span>{l s='Shipping' mod='blockcart'}</span>
-			<br/>
+			<span class="text">{l s='Shipping' mod='blockcart'}</span>
 			{if $show_wrapping}
 				{assign var='cart_flag' value='Cart::ONLY_WRAPPING'|constant}
 				<span id="cart_block_wrapping_cost" class="price cart_block_wrapping_cost">{if $priceDisplay == 1}{convertPrice price=$cart->getOrderTotal(false, $cart_flag)}{else}{convertPrice price=$cart->getOrderTotal(true, $cart_flag)}{/if}</span>
@@ -150,10 +156,11 @@ var delete_txt = '{l s='Delete' mod='blockcart' js=1}';
 			{if $show_tax && isset($tax_cost)}
 				<span id="cart_block_tax_cost" class="price ajax_cart_tax_cost">{$tax_cost}</span>
 				<span>{l s='Tax' mod='blockcart'}</span>
-				<br/>
 			{/if}
+        </p>
+		<p id="cart-prices">
 			<span id="cart_block_total" class="price ajax_block_cart_total">{$total}</span>
-			<span>{l s='Total' mod='blockcart'}</span>
+			<span class="text">{l s='Coût total de la commande' mod='blockcart'}</span>
 		</p>
 		{if $use_taxes && $display_tax_label == 1 && $show_tax}
 			{if $priceDisplay == 0}

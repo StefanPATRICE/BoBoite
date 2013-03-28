@@ -8,7 +8,7 @@ img { display: block; }
 
 #fond { position: absolute; top: 0; left: 0; background: black; width: 100%; height: 100%; display: none; background-color: rgba(50,31,11,0.5); z-index: 1000; }
 .popupboboite { position: absolute; top: 100px; left: 50%; margin-left: -400px; width: 800px; background: #f7f8d3; z-index: 1; display: none; padding: 64px 16px 86px 16px; }
-body #header_links, body #header_user { padding-top: 14px; width: 50%; }
+body #header_links, body #header_user { padding-top: 16px; width: 50%; }
 #header .lien_haut_popup { border-bottom: 1px solid #dc9e87; padding-bottom: 5px; text-align: left; }
 #header .lien_haut_popup a { font-size: 25px; }
 #header .lien_haut_popup a+a { margin-left: 31px; }

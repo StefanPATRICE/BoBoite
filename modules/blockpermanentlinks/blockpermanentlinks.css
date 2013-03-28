@@ -1,11 +1,7 @@
 /* block top links */
-ul#header_links {
-	list-style-type: none;
-	float: left; display: block;
-	width: 50%; margin: 0; padding: 0;
-}
+div#header_links { float: left; }
 #header_links > div { padding-right: 80px; }
-#header_links li { width: 50%; float: left; display: block; text-align: center; }
+#header_links > div > div { width: 50%; float: left; display: block; text-align: center; }
 #header_links li:first-child {border:none;}
 #header_links a:hover {text-decoration:underline}
 

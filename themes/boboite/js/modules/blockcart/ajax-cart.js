@@ -33,6 +33,7 @@ var ajaxCart = {
 
 	//override every button in the page in relation to the cart
 	overrideButtonsInThePage : function(){
+
 		//for every 'add' buttons...
 		$('.ajax_add_to_cart_button').unbind('click').click(function(){
 			var idProduct =  $(this).attr('rel').replace('ajax_id_product_', '');
@@ -42,6 +43,7 @@ var ajaxCart = {
 		});
 		//for product page 'add' button...
 		$('#add_to_cart input').unbind('click').click(function(){
+			console.log(2646);
 			ajaxCart.add( $('#product_page_product_id').val(), $('#idCombination').val(), true, null, $('#quantity_wanted').val(), null);
 			return false;
 		});
@@ -412,12 +414,15 @@ var ajaxCart = {
 			//fix ie6 bug (one more item 'undefined' in IE6)
 			if (this.id != undefined)
 			{
+				console.log('test');
 				//create a container for listing the products and hide the 'no product in the cart' message (only if the cart was empty)
 				if ($('#cart_block dl.products').length == 0)
 				{
 					$('#cart_block_no_products').before('<dl class="products"></dl>');
-					$('#cart_block_no_products').hide();
+
 				}
+				else
+					$('#cart_block_no_products').hide();
 				//if product is not in the displayed cart, add a new product's line
 				var domIdProduct = this.id + '_' + (this.idCombination ? this.idCombination : '0') + '_' + (this.idAddressDelivery ? this.idAddressDelivery : '0');
 
@@ -432,7 +437,7 @@ var ajaxCart = {
 					content += '<a href="' + this.link + '" title="' + this.name + '">' + name + '</a>';
 					
 					if (parseFloat(this.price_float) > 0)
-						content += '<span class="remove_link"><a rel="nofollow" class="ajax_cart_block_remove_link" href="' + baseUri + '?controller=cart&amp;delete&amp;id_product=' + productId + '&amp;token=' + static_token + (this.hasAttributes ? '&amp;ipa=' + parseInt(this.idCombination) : '') + '"> </a></span>';
+						content += '<span class="remove_link"><a rel="nofollow" class="ajax_cart_block_remove_link" href="' + baseUri + '?controller=cart&amp;delete&amp;id_product=' + productId + '&amp;token=' + static_token + (this.hasAttributes ? '&amp;ipa=' + parseInt(this.idCombination) : '') + '">X</a></span>';
 					else
 						content += '<span class="remove_link"></span>';
 					if (typeof(freeShippingTranslation) != 'undefined')
@@ -508,7 +513,7 @@ var ajaxCart = {
 			var done = 0;
 			customizationId = parseInt(this.customizationId);
 			productAttributeId = typeof(product.idCombination) == 'undefined' ? 0 : parseInt(product.idCombination);
-			content += '<li name="customization"><div class="deleteCustomizableProduct" id="deleteCustomizableProduct_' + customizationId + '_' + productId + '_' + (productAttributeId ?  productAttributeId : '0') + '"><a  rel="nofollow" class="ajax_cart_block_remove_link" href="' + baseUri + '?controller=cart&amp;delete&amp;id_product=' + productId + '&amp;ipa=' + productAttributeId + '&amp;id_customization=' + customizationId + '&amp;token=' + static_token + '"> </a></div><span class="quantity-formated"><span class="quantity">' + parseInt(this.quantity) + '</span>x</span>';
+			content += '<li name="customization"><div class="deleteCustomizableProduct" id="deleteCustomizableProduct_' + customizationId + '_' + productId + '_' + (productAttributeId ?  productAttributeId : '0') + '"><a  rel="nofollow" class="ajax_cart_block_remove_link" href="' + baseUri + '?controller=cart&amp;delete&amp;id_product=' + productId + '&amp;ipa=' + productAttributeId + '&amp;id_customization=' + customizationId + '&amp;token=' + static_token + '">X</a></div><span class="quantity-formated"><span class="quantity">' + parseInt(this.quantity) + '</span></span>';
 
 			// Give to the customized product the first textfield value as name
 			$(this.datas).each(function(){
