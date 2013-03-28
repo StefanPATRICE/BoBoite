@@ -27,6 +27,8 @@
 
 <h1>Ils témoignent</h1>
 
+<div class="buttons-round"></div>
+
 <div id="content-tem">
 	<div class="tem tem1">
 		<h2 style="margin-left: -15px;">Alexandre <span style="margin-left: 190px;">Moifor</span></h2>
@@ -48,4 +50,6 @@
 		Lorem ipsum Nulla irure eu adipisicing sed culpa officia et occaecat Duis commodo laborum nostrud.</p>
 		<div class="separator-tem"></div>
 	</div>
+
+	<p class="exp">partagez votre expérience boboite </p>
 </div>

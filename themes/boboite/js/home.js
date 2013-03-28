@@ -10,7 +10,7 @@ var step = 1;
 $(document).ready(function(){
 
 	$('#product #center_column').css('height', $(document).height() - 45);
-	$('#contact #page').css('height', $(document).height() - 45);
+	$('#contact #page').css('height', $(document).height());
 
 	$('#contact #page').css('background', 'url("http://tousenboite.gobelins-annecy.com/themes/boboite/img/bg-tem.jpg")');
 

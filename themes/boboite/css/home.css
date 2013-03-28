@@ -14,7 +14,7 @@ body{
 
 
 #text-content{
-	position: absolute;
+	position: fixed!important;
 	z-index: 15;
 	position: fixed;
 	width: 960px;
@@ -41,10 +41,14 @@ body{
 
 #text-content .text h2{
 	font-family: 'NeutrafaceTextBoldAlt';
-	font-size: 40px;
+	font-size: 55px;
 	text-transform: uppercase;
 	color: #ffffff;
 	margin-bottom: 0;
+}
+
+#text-content .text .diff{
+	color: #f7f7dd;
 }
 
 #text-content .text h2, #text-content .text p{
@@ -71,14 +75,16 @@ body{
 
 #text-content .text p{
 	font-family: 'BrownRegular';
-	font-size: 13px;
-	line-height: 15px;
+	font-size: 16px;
+	line-height: 25px;
+	color: #444;
 }
 
 #text-content .headline{
 	color: #5e6a9c;
-	font-family: 'NeutrafaceTextLightAlt';
-	font-size: 23px;
+	font-family: 'NeutrafaceTextLight'!important;
+	font-size: 27px!important;
+	line-height: 30px!important;
 	text-transform: uppercase;
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -91,6 +97,18 @@ body{
 
 #text-content .headline.pink{
 	color: #733f3f;
+}
+
+#text-content .custo{
+	display: block;
+	width: 240px;
+	height: 44px;
+	background: url('../img/btn_home.png');
+	margin-top: 20px;
+}
+
+#text-content .custo:hover{
+	background: url('../img/btn_hom_survol.png');
 }
 
 
@@ -234,13 +252,22 @@ body{
 	text-align: center;
 	padding-top: 60px;
 	margin-bottom: 0;
-	color: #ffffff;
+	color: #f5f5d0;
 	text-transform: uppercase;
 	font-family: 'NeutrafaceTextBoldAlt';
 	font-size: 50px;
 
 }
 
+
+#contact .buttons-round{
+	background: url('../img/buttons.png');
+	width: 98px;
+	height: 29px;
+	margin: auto;
+		margin-top: 5px;
+	margin-bottom: 20px;
+}
 
 #contact h2{
 	margin-top: 95px;
@@ -302,8 +329,71 @@ body{
 	margin-bottom: 25px;
 }
 
+#contact .exp{
+	text-align: center;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-family: 'NeutrafaceTextDemiAlt';
+}
+
 
 /* PREHOME */
 #index{
 	background: url('../img/bg.jpg');
+}
+
+/* ORDER */
+#order{
+	background: url('../img/bg.jpg');
+}
+
+#order .breadcrumb{
+	display: none;
+}
+
+#order .step, #order .cart_last_product{
+	display: none;
+}
+
+#order h1{
+	margin-top: 0;
+	text-align: center;
+	padding-top: 60px;
+	margin-bottom: 0;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-family: 'NeutrafaceTextBoldAlt';
+	font-size: 50px;
+}
+
+#order #center_column{
+	width: 960px;
+	margin: auto;
+}
+
+
+#order table{
+	margin: auto;
+	width: 960px;
+}
+
+
+#order table tr{
+	border-bottom: 1px solid #d3d3d3;
+	background: #f7f8d3;
+}
+
+#order table td{
+	padding: 10px;
+}
+
+#order table th{
+	font-family: 'NeutrafaceTextBoldAlt';
+	font-size: 15px;
+	text-transform: uppercase;
+}
+
+#order table tfoot td{
+	padding-top: 3px;
+	padding-bottom: 3px;
 }

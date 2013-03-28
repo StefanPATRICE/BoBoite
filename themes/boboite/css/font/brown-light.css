@@ -6,3 +6,12 @@
          url('brown-light.ttf') format('truetype'),
          url('brown-light.svg#BrownLight') format('svg');
 }
+
+@font-face {
+    font-family: 'NeutrafaceTextLight';
+    src: url('neutrafacetext-light.eot');
+    src: url('neutrafacetext-light.eot') format('embedded-opentype'),
+         url('neutrafacetext-light.woff') format('woff'),
+         url('neutrafacetext-light.ttf') format('truetype'),
+         url('neutrafacetext-light.svg#NeutrafaceTextLight') format('svg');
+}
