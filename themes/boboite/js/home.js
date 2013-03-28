@@ -7,6 +7,8 @@ var documentHeight = nbImages * scrollPart + $(window).height();;
 
 $(document).ready(function(){
 
+	$('#product #center_column').css('height', $(document).height());
+
 	if($('#index').length > 0)
 	{
 		$('body').height(documentHeight);
@@ -41,30 +43,55 @@ $(document).ready(function(){
 
 			var currentScroll = $('.wrapper.active').data('id');
 
-			if(currentScroll <= 2)
+			if(currentScroll <= 10)
 				$('.text[data-id="1"]').addClass('active');
 			else
 				$('.text[data-id="1"]').removeClass('active');
 
-			if(currentScroll > 2 && currentScroll <= 6)
+			if(currentScroll > 10 && currentScroll <= 36)
 				$('.text[data-id="2"]').addClass('active');
 			else
 				$('.text[data-id="2"]').removeClass('active');
 
-			if(currentScroll > 6 && currentScroll <= 9)
+			if(currentScroll > 36 && currentScroll <= 45)
 				$('.text[data-id="3"]').addClass('active');
 			else
 				$('.text[data-id="3"]').removeClass('active');
 
-			if(currentScroll > 9 && currentScroll <= 12)
+			if(currentScroll > 45 && currentScroll <= 62)
 				$('.text[data-id="4"]').addClass('active');
 			else
 				$('.text[data-id="4"]').removeClass('active');
 
-			if(currentScroll > 12 && currentScroll <= 15)
+			if(currentScroll > 62 && currentScroll <= 81)
 				$('.text[data-id="5"]').addClass('active');
 			else
 				$('.text[data-id="5"]').removeClass('active');
+
+			if(currentScroll > 81 && currentScroll <= 92)
+				$('.text[data-id="6"]').addClass('active');
+			else
+				$('.text[data-id="6"]').removeClass('active');
+
+			if(currentScroll > 92 && currentScroll <= 106)
+				$('.text[data-id="7"]').addClass('active');
+			else
+				$('.text[data-id="7"]').removeClass('active');
+
+			if(currentScroll > 106 && currentScroll <= 128)
+				$('.text[data-id="8"]').addClass('active');
+			else
+				$('.text[data-id="8"]').removeClass('active');
+
+			if(currentScroll > 128 && currentScroll <= 141)
+				$('.text[data-id="9"]').addClass('active');
+			else
+				$('.text[data-id="9"]').removeClass('active');
+
+			if(currentScroll > 141 && currentScroll <= 143)
+				$('.text[data-id="10"]').addClass('active');
+			else
+				$('.text[data-id="10"]').removeClass('active');
 		});
 	}
 });
