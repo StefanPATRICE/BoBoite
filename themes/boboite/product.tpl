@@ -151,6 +151,14 @@ var fieldRequired = '{l s='Please fill in all required fields, then save the cus
 {*{include file="$tpl_dir./breadcrumb.tpl"}*}
 <div id="primary_block" class="clearfix">
 
+	<h2>Customise<br/>ta Boboite</h2>
+
+	<div class="bar"></div>
+	<p style="margin-left: 56px;">Mettre un mother fucking texte ici.</p>
+	<div class="bar-color"></div>
+	<div class="bar-texture"></div>
+	<div class="bar-forme"></div>
+
 	{if isset($adminActionDisplay) && $adminActionDisplay}
 	<div id="admin-action">
 		<p>{l s='This product is not visible to your customers.'}
@@ -171,6 +179,7 @@ var fieldRequired = '{l s='Please fill in all required fields, then save the cus
 
 	<!-- right infos-->
 	<div id="pb-right-column">
+
 		<!-- product img-->
 		<div id="image-block">
 		{if $have_image}
@@ -494,6 +503,7 @@ var fieldRequired = '{l s='Please fill in all required fields, then save the cus
 {/if}
 {if isset($HOOK_PRODUCT_FOOTER) && $HOOK_PRODUCT_FOOTER}{$HOOK_PRODUCT_FOOTER}{/if}
 
+{* 
 <!-- description and features -->
 {if (isset($product) && $product->description) || (isset($features) && $features) || (isset($accessories) && $accessories) || (isset($HOOK_PRODUCT_TAB) && $HOOK_PRODUCT_TAB) || (isset($attachments) && $attachments) || isset($product) && $product->customizable}
 <div id="more_info_block" class="clear">
@@ -632,6 +642,7 @@ var fieldRequired = '{l s='Please fill in all required fields, then save the cus
 	</div>
 </div>
 {/if}
+*}
 
 {if isset($packItems) && $packItems|@count > 0}
 	<div id="blockpack">
