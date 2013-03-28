@@ -1,9 +1,7 @@
 
 #footer{
-	overflow: hidden;
 	position: fixed;
 	bottom: 0;
-	height: 72px;
 	width: 100%;
 	z-index: 1000;
 }
@@ -12,7 +10,6 @@
 	display: inline;
 	margin-left: 28px;
 	margin-right: 28px;
-	margin-top: 11px;
 }
 
 

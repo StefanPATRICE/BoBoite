@@ -23,7 +23,7 @@ $_MODULE['<{blocknewsletter}prestashop>blocknewsletter_ff0a3b7f3daef040faf89a88f
 $_MODULE['<{blocknewsletter}prestashop>blocknewsletter_f4f70727dc34561dfde1a3c529b6205c'] = 'Paramètres';
 $_MODULE['<{blocknewsletter}prestashop>blocknewsletter_506e58042922bff5bd753dc612e84f5b'] = 'Code de réduction offert';
 $_MODULE['<{blocknewsletter}prestashop>blocknewsletter_f7dc297e2a139ab4f5a771825b46df43'] = 'Votre désinscription a bien été prise en compte';
-$_MODULE['<{blocknewsletter}prestashop>blocknewsletter_ffb7e666a70151215b4c55c6268d7d72'] = 'Newsletter';
+$_MODULE['<{blocknewsletter}prestashop>blocknewsletter_ffb7e666a70151215b4c55c6268d7d72'] = 'Inscrivez-vous à la newsletter';
 $_MODULE['<{blocknewsletter}prestashop>blocknewsletter_9e31b08a00c1ed653bcaa517dee84714'] = 'Bloc newsletter';
 $_MODULE['<{blocknewsletter}prestashop>blocknewsletter_179bbcbd2e1104cdf9dcecd91264a961'] = 'Êtes-vous sûr de vouloir supprimer tous vos contacts ?';
 $_MODULE['<{blocknewsletter}prestashop>blocknewsletter_9e1f0c4c3f90d775eafbb0854ec63808'] = 'E-mail déjà enregistré ou non valable';

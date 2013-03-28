@@ -397,3 +397,33 @@ body{
 	padding-top: 3px;
 	padding-bottom: 3px;
 }
+
+
+
+
+
+
+
+/* NEWSLETTER */
+
+#newsletter_block_left {
+	position: absolute!important;
+	top: 18px!important;
+	right: 40px!important;
+	padding: 0!important;
+	border: none!important;
+	background: none!important;
+}
+
+#newsletter_block_left p{
+	margin: 0!important;
+}
+
+#newsletter_block_left input[type="text"]{
+	background: #ffffff!important;
+	border-radius: none!important;
+	border: none!important;
+	color: #000000!important;
+	width: 100px!important;
+	height: 17px!important;
+}
