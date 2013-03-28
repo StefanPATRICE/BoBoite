@@ -7,7 +7,8 @@ var documentHeight = nbImages * scrollPart + $(window).height();;
 
 $(document).ready(function(){
 
-	$('#product #center_column').css('height', $(document).height());
+	$('#product #center_column').css('height', $(document).height() - 45);
+	$('#contact #page').css('height', $(document).height() - 45);
 
 	if($('#index').length > 0)
 	{
