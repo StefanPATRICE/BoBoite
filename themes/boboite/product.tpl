@@ -151,13 +151,11 @@ var fieldRequired = '{l s='Please fill in all required fields, then save the cus
 {*{include file="$tpl_dir./breadcrumb.tpl"}*}
 <div id="primary_block" class="clearfix">
 
-	<h2>Customise<br/>ta Boboite</h2>
+	<h2>Customise ta Boboite</h2>
 
 	<div class="bar"></div>
-	<p style="margin-left: 56px;">Mettre un mother fucking texte ici.</p>
-	<div class="bar-color"></div>
-	<div class="bar-texture"></div>
-	<div class="bar-forme"></div>
+	<div class="texte">{$product->description}</div>
+
 
 	{if isset($adminActionDisplay) && $adminActionDisplay}
 	<div id="admin-action">
@@ -229,7 +227,7 @@ var fieldRequired = '{l s='Please fill in all required fields, then save the cus
 
 	<!-- left infos-->
 	<div id="pb-left-column">
-		<h1>{$product->name|escape:'htmlall':'UTF-8'}</h1>
+		{*<h1>{$product->name|escape:'htmlall':'UTF-8'}</h1>
 
 		{if $product->description_short OR $packItems|@count > 0}
 		<div id="short_description_block">
@@ -252,6 +250,7 @@ var fieldRequired = '{l s='Please fill in all required fields, then save the cus
 			{/if}
 		</div>
 		{/if}
+		*}
 
 		{*{if isset($colors) && $colors}
 		<!-- colors -->
@@ -285,7 +284,8 @@ var fieldRequired = '{l s='Please fill in all required fields, then save the cus
 				<div id="attributes">
 				{foreach from=$groups key=id_attribute_group item=group}
 					{if $group.attributes|@count}
-						<fieldset class="attribute_fieldset">
+						<fieldset class="attribute_fieldset group_{$id_attribute_group|intval}">
+							<div class="bar"></div>
 							<label class="attribute_label" for="group_{$id_attribute_group|intval}">{$group.name|escape:'htmlall':'UTF-8'} :</label>
 							{assign var="groupName" value="group_$id_attribute_group"}
 							<div class="attribute_list">
@@ -299,10 +299,10 @@ var fieldRequired = '{l s='Please fill in all required fields, then save the cus
 								<ul id="color_to_pick_list" class="clearfix">
 									{assign var="default_colorpicker" value=""}
 									{foreach from=$group.attributes key=id_attribute item=group_attribute}
-									<li{if $group.default == $id_attribute} class="selected"{/if}>
-										<a id="color_{$id_attribute|intval}" class="color_pick{if ($group.default == $id_attribute)} selected{/if}" style="background: {$colors.$id_attribute.value};" title="{$colors.$id_attribute.name}" onclick="colorPickerClick(this);getProductAttribute();{if $colors|@count > 0}$('#wrapResetImages').show('slow');{/if}">
+									<li class="{if $group.default == $id_attribute}selected {/if}color_{$id_attribute|intval}">
+										<a id="color_{$id_attribute|intval}" class="color_pick{if ($group.default == $id_attribute)} selected{/if}" title="{$colors.$id_attribute.name}" onclick="colorPickerClick(this);getProductAttribute();{if $colors|@count > 0}$('#wrapResetImages').show('slow');{/if}">
 											{if file_exists($col_img_dir|cat:$id_attribute|cat:'.jpg')}
-												<img src="{$img_col_dir}{$id_attribute}.jpg" alt="{$colors.$id_attribute.name}" width="20" height="20" /><br>
+												<img src="{$img_col_dir}{$id_attribute}.jpg" alt="{$colors.$id_attribute.name}" />
 											{/if}
 										</a>
 									</li>
@@ -314,8 +314,8 @@ var fieldRequired = '{l s='Please fill in all required fields, then save the cus
 								<input type="hidden" class="color_pick_hidden" name="{$groupName}" value="{$default_colorpicker}" />
 							{elseif ($group.group_type == 'radio')}
 								{foreach from=$group.attributes key=id_attribute item=group_attribute}
-									<input type="radio" class="attribute_radio" name="{$groupName}" value="{$id_attribute}" {if ($group.default == $id_attribute)} checked="checked"{/if} onclick="findCombination();getProductAttribute();{if $colors|@count > 0}$('#wrapResetImages').show('slow');{/if}">
-									{$group_attribute|escape:'htmlall':'UTF-8'}<br/>
+									<input type="radio" class="attribute_radio" name="{$groupName}" value="{$id_attribute}" id="{$id_attribute}" {if ($group.default == $id_attribute)} checked="checked"{/if} onclick="findCombination();getProductAttribute();{if $colors|@count > 0}$('#wrapResetImages').show('slow');{/if}">
+									<label for="{$id_attribute}">  {$group_attribute|escape:'htmlall':'UTF-8'}</label>
 								{/foreach}
 							{/if}
 							</div>
@@ -450,7 +450,7 @@ var fieldRequired = '{l s='Please fill in all required fields, then save the cus
 			{else}
 				<p id="add_to_cart" class="buttons_bottom_block">
 					<span></span>
-					<input type="submit" name="Submit" value="{l s='Add to cart'}" class="exclusive" />
+					<input type="submit" name="Submit" value="" class="exclusive" />
 				</p>
 			{/if}
 			{if isset($HOOK_PRODUCT_ACTIONS) && $HOOK_PRODUCT_ACTIONS}{$HOOK_PRODUCT_ACTIONS}{/if}

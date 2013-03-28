@@ -544,9 +544,9 @@ $(document).ready(function()
 		});
 	}
 	//add a link on the span 'view full size' and on the big image
-	$('#view_full_size, #image-block img').click(function(){
+	/*$('#view_full_size, #image-block img').click(function(){
 		$('#views_block .shown').click();
-	});
+	});*/
 
 	//catch the click on the "more infos" button at the top of the page
 	$('#short_description_block .button').click(function(){

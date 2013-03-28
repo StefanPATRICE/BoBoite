@@ -76,9 +76,14 @@
 
 			<!-- Header -->
 			<div id="header" class="grid_9 alpha omega">
+                {*
 				<a id="header_logo" href="{$base_dir}" title="{$shop_name|escape:'htmlall':'UTF-8'}">
 					<img class="logo" src="http://tousenboite.gobelins-annecy.com/themes/boboite/img/logo.png" alt="{$shop_name|escape:'htmlall':'UTF-8'}" />
 				</a>
+				*}
+				<a id="header_logo" href="{$link->getPageLink('cms', true)}" title="{l s='View my customer account' mod='blockuserinfo'}" rel="nofollow">
+					<img class="logo" src="http://tousenboite.gobelins-annecy.com/themes/boboite/img/logo.png" alt="{$shop_name|escape:'htmlall':'UTF-8'}" />
+                </a>
 				<div id="header_right" class="grid_6 omega">
 					{$HOOK_TOP}
 				</div>

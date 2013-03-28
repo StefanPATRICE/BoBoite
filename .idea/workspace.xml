@@ -23,16 +23,7 @@
       <file leaf-file-name="FrontController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classes/controller/FrontController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="752" column="8" selection-start="27630" selection-end="27630" vertical-scroll-proportion="18.7">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="blockuserinfo.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/blockuserinfo/blockuserinfo.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="38" selection-start="359" selection-end="359" vertical-scroll-proportion="-7.68">
+            <state line="744" column="57" selection-start="27248" selection-end="27248" vertical-scroll-proportion="13.9">
               <folding />
             </state>
           </provider>
@@ -41,10 +32,19 @@
       <file leaf-file-name="blockuserinfo.tpl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/blockuserinfo/blockuserinfo.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="160" column="14" selection-start="6968" selection-end="6968" vertical-scroll-proportion="6.22">
+            <state line="29" column="193" selection-start="1076" selection-end="1261" vertical-scroll-proportion="-5.44">
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#fieldset#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.tpl" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/themes/boboite/header.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="83" column="137" selection-start="3929" selection-end="3929" vertical-scroll-proportion="0.93846154">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -85,7 +85,25 @@
       <file leaf-file-name="index.tpl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/boboite/index.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="33" selection-start="803" selection-end="803" vertical-scroll-proportion="-12.8">
+            <state line="20" column="33" selection-start="803" selection-end="803" vertical-scroll-proportion="-7.92">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="homefeatured.tpl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/homefeatured/homefeatured.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="13" selection-start="659" selection-end="659" vertical-scroll-proportion="-1.28">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="homefeatured.tpl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/boboite/modules/homefeatured/homefeatured.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="14" selection-start="389" selection-end="389" vertical-scroll-proportion="-14.32">
               <folding />
             </state>
           </provider>
@@ -112,7 +130,16 @@
       <file leaf-file-name="ajax-cart.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/blockcart/ajax-cart.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="667" column="7" selection-start="24990" selection-end="24990" vertical-scroll-proportion="0.0">
+            <state line="214" column="28" selection-start="7204" selection-end="7212" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="product.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/boboite/js/product.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="548" column="9" selection-start="20632" selection-end="20632" vertical-scroll-proportion="17.2">
               <folding />
             </state>
           </provider>
@@ -121,7 +148,7 @@
       <file leaf-file-name="blockcart.tpl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/blockcart/blockcart.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="87" column="150" selection-start="5591" selection-end="5591" vertical-scroll-proportion="18.48">
+            <state line="87" column="150" selection-start="5591" selection-end="5591" vertical-scroll-proportion="-2.64">
               <folding />
             </state>
           </provider>
@@ -183,124 +210,40 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="product.tpl" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="product.tpl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/boboite/product.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="572" column="51" selection-start="31265" selection-end="31272" vertical-scroll-proportion="0.33150685">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AuthController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/front/AuthController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="613" column="30" selection-start="23010" selection-end="23010" vertical-scroll-proportion="30.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="authentication.tpl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/boboite/authentication.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="173" column="106" selection-start="6068" selection-end="6068" vertical-scroll-proportion="-2.96">
+            <state line="452" column="62" selection-start="24882" selection-end="24882" vertical-scroll-proportion="45.58">
               <folding>
-                <marker date="1364477890732" expanded="true" signature="1965:1998" placeholder="{...}" />
-                <marker date="1364477890732" expanded="true" signature="1998:2028" placeholder="{...}" />
-                <marker date="1364477890732" expanded="true" signature="1998:2028" placeholder="{...}" />
-                <marker date="1364477890732" expanded="true" signature="2028:2034" placeholder="{...}" />
-                <marker date="1364477890732" expanded="true" signature="2034:2054" placeholder="{...}" />
-                <marker date="1364477890732" expanded="true" signature="2054:2081" placeholder="{...}" />
-                <marker date="1364477890732" expanded="true" signature="2081:2086" placeholder="{...}" />
-                <marker date="1364477890732" expanded="true" signature="2086:2091" placeholder="{...}" />
-                <marker date="1364477890732" expanded="true" signature="3806:4286" placeholder="{...}" />
-                <marker date="1364477890732" expanded="true" signature="3996:4188" placeholder="{...}" />
-                <marker date="1364477890732" expanded="true" signature="4365:4512" placeholder="{...}" />
+                <element signature="n#style#0;n#span#0;n#p#0;n#div#3;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#0;n#form#0;n#div#4;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#1;n#div#0;n#form#0;n#div#4;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#2;n#div#0;n#form#0;n#div#4;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#3;n#div#0;n#form#0;n#div#4;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#p#3;n#div#0;n#form#0;n#div#4;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#2;n#p#3;n#div#0;n#form#0;n#div#4;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#4;n#div#0;n#form#0;n#div#4;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#5;n#div#0;n#form#0;n#div#4;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="order-address-multishipping-products.tpl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/boboite/order-address-multishipping-products.tpl">
+      <file leaf-file-name="contact-form.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/boboite/css/contact-form.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="7" selection-start="34" selection-end="35" vertical-scroll-proportion="-0.46">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="order-address-multishipping.tpl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/boboite/order-address-multishipping.tpl">
+      <file leaf-file-name="cms.tpl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/boboite/cms.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="7" selection-start="34" selection-end="35" vertical-scroll-proportion="-0.46">
+            <state line="72" column="0" selection-start="2789" selection-end="2789" vertical-scroll-proportion="-46.08">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="order-address.tpl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/boboite/order-address.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="192" column="64" selection-start="6878" selection-end="6879" vertical-scroll-proportion="-61.44">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="blockspecials.tpl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/boboite/modules/blockspecials/blockspecials.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="23" selection-start="0" selection-end="2950" vertical-scroll-proportion="-13.8">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="homefeatured.tpl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/boboite/modules/homefeatured/homefeatured.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="10" selection-start="3084" selection-end="3084" vertical-scroll-proportion="-6.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="homefeatured.tpl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/homefeatured/homefeatured.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="7.68">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="homefeatured.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/homefeatured/homefeatured.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="105" column="16" selection-start="3587" selection-end="3587" vertical-scroll-proportion="-1.92">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Category.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/classes/Category.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="637" column="16" selection-start="22625" selection-end="22625" vertical-scroll-proportion="12.3">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="products-comparison.tpl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/boboite/products-comparison.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="20" selection-start="0" selection-end="6162" vertical-scroll-proportion="-11.88">
-              <folding>
-                <element signature="n#style#0;n#div#1;n#div#1;n#td#1;n#table#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -308,7 +251,16 @@
       <file leaf-file-name="product.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/boboite/css/product.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="352" column="1" selection-start="6333" selection-end="6333" vertical-scroll-proportion="0.0">
+            <state line="364" column="17" selection-start="6877" selection-end="6877" vertical-scroll-proportion="-4.56">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="global.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/boboite/mobile/css/global.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -327,30 +279,30 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/themes/boboite/contact-form.tpl" />
-        <option value="$PROJECT_DIR$/modules/blockpermanentlinks/blockpermanentlinks-header.tpl" />
-        <option value="$PROJECT_DIR$/modules/blockpermanentlinks/blockpermanentlinks.css" />
-        <option value="$PROJECT_DIR$/themes/boboite/css/global.css" />
-        <option value="$PROJECT_DIR$/themes/boboite/modules/blockcart/blockcart.tpl" />
-        <option value="$PROJECT_DIR$/modules/blockcart/blockcart.tpl" />
-        <option value="$PROJECT_DIR$/themes/boboite/modules/blockwishlist/blockwishlist.tpl" />
         <option value="$PROJECT_DIR$/themes/boboite/js/popup.js" />
         <option value="$PROJECT_DIR$/modules/homefeatured/homefeatured.php" />
-        <option value="$PROJECT_DIR$/themes/boboite/modules/homefeatured/homefeatured.tpl" />
         <option value="$PROJECT_DIR$/modules/blockcart/blockcart.css" />
         <option value="$PROJECT_DIR$/modules/blockcart/ajax-cart.js" />
         <option value="$PROJECT_DIR$/themes/boboite/js/modules/blockcart/ajax-cart.js" />
-        <option value="$PROJECT_DIR$/classes/controller/FrontController.php" />
         <option value="$PROJECT_DIR$/modules/blockuserinfo/blockuserinfo.tpl" />
         <option value="$PROJECT_DIR$/themes/boboite/authentication.tpl" />
+        <option value="$PROJECT_DIR$/themes/boboite/css/home.css" />
+        <option value="$PROJECT_DIR$/classes/controller/FrontController.php" />
+        <option value="$PROJECT_DIR$/themes/boboite/js/product.js" />
+        <option value="$PROJECT_DIR$/themes/boboite/css/product.css" />
+        <option value="$PROJECT_DIR$/themes/boboite/product.tpl" />
+        <option value="$PROJECT_DIR$/themes/boboite/css/contact-form.css" />
+        <option value="$PROJECT_DIR$/themes/boboite/cms.tpl" />
+        <option value="$PROJECT_DIR$/themes/boboite/modules/homefeatured/homefeatured.tpl" />
+        <option value="$PROJECT_DIR$/themes/boboite/header.tpl" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="71" />
-    <option name="y" value="-8" />
-    <option name="width" value="1303" />
+    <option name="x" value="-1374" />
+    <option name="y" value="304" />
+    <option name="width" value="1382" />
     <option name="height" value="784" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -426,68 +378,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="boboite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BoBoite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BoBoite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="boboite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BoBoite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BoBoite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="boboite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="homefeatured" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BoBoite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BoBoite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -615,21 +505,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="71" y="-8" width="1303" height="784" extended-state="6" />
+    <frame x="-1374" y="304" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="File Transfer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3215149" sideWeight="0.38942307" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33333334" sideWeight="0.4971797" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1780822" sideWeight="0.6666667" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1780822" sideWeight="0.6666667" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852563" sideWeight="0.4971797" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852563" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26188558" sideWeight="0.6666667" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24621212" sideWeight="0.6666667" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -692,70 +582,17 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/modules/homefeatured/homefeatured.tpl">
+    <entry file="file://$PROJECT_DIR$/themes/boboite/breadcrumb.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="7.68">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/boboite/modules/homefeatured/homefeatured.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="10" selection-start="3084" selection-end="3084" vertical-scroll-proportion="-6.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/blockcart/blockcart.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="112" selection-start="1548" selection-end="1548" vertical-scroll-proportion="-3.08">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/blockcart/ajax-cart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="667" column="7" selection-start="24990" selection-end="24990" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/boboite/js/modules/blockcart/ajax-cart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="178" column="56" selection-start="5930" selection-end="5949" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/blockpermanentlinks/blockpermanentlinks-header.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="17" selection-start="1066" selection-end="1066" vertical-scroll-proportion="-4.56">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/tools.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="202" column="9" selection-start="6301" selection-end="6301" vertical-scroll-proportion="0.0">
+        <state line="28" column="67" selection-start="1163" selection-end="1173" vertical-scroll-proportion="-4.84">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/controller/FrontController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="752" column="8" selection-start="27630" selection-end="27630" vertical-scroll-proportion="18.7">
+        <state line="744" column="57" selection-start="27248" selection-end="27248" vertical-scroll-proportion="13.9">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/blockuserinfo/blockuserinfo.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="160" column="14" selection-start="6968" selection-end="6968" vertical-scroll-proportion="6.22">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#fieldset#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -766,60 +603,106 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/boboite/js/tools/statesManagement.js">
+    <entry file="file://$PROJECT_DIR$/modules/blockcart/ajax-cart.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="35" selection-start="343" selection-end="343" vertical-scroll-proportion="0.0">
+        <state line="214" column="28" selection-start="7204" selection-end="7212" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/front/AuthController.php">
+    <entry file="file://$PROJECT_DIR$/themes/boboite/js/product.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="613" column="30" selection-start="23010" selection-end="23010" vertical-scroll-proportion="30.0">
+        <state line="548" column="9" selection-start="20632" selection-end="20632" vertical-scroll-proportion="17.2">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/jquery/jquery-1.7.2.min.js">
+    <entry file="file://$PROJECT_DIR$/themes/boboite/mobile/css/global.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="2344" selection-start="2397" selection-end="2397" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <marker date="1364397507959" expanded="true" signature="17421:17452" placeholder="..." />
-            <marker date="1364397507959" expanded="true" signature="20576:20586" placeholder="..." />
-          </folding>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/boboite/authentication.tpl">
+    <entry file="file://$PROJECT_DIR$/themes/boboite/css/product.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="173" column="106" selection-start="6068" selection-end="6068" vertical-scroll-proportion="-2.96">
-          <folding>
-            <marker date="1364477890732" expanded="true" signature="1965:1998" placeholder="{...}" />
-            <marker date="1364477890732" expanded="true" signature="1998:2028" placeholder="{...}" />
-            <marker date="1364477890732" expanded="true" signature="1998:2028" placeholder="{...}" />
-            <marker date="1364477890732" expanded="true" signature="2028:2034" placeholder="{...}" />
-            <marker date="1364477890732" expanded="true" signature="2034:2054" placeholder="{...}" />
-            <marker date="1364477890732" expanded="true" signature="2054:2081" placeholder="{...}" />
-            <marker date="1364477890732" expanded="true" signature="2081:2086" placeholder="{...}" />
-            <marker date="1364477890732" expanded="true" signature="2086:2091" placeholder="{...}" />
-            <marker date="1364477890732" expanded="true" signature="3806:4286" placeholder="{...}" />
-            <marker date="1364477890732" expanded="true" signature="3996:4188" placeholder="{...}" />
-            <marker date="1364477890732" expanded="true" signature="4365:4512" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/boboite/breadcrumb.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="67" selection-start="1163" selection-end="1173" vertical-scroll-proportion="-4.84">
+        <state line="364" column="17" selection-start="6877" selection-end="6877" vertical-scroll-proportion="-4.56">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/boboite/product.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="572" column="51" selection-start="31265" selection-end="31272" vertical-scroll-proportion="0.33150685">
+        <state line="452" column="62" selection-start="24882" selection-end="24882" vertical-scroll-proportion="45.58">
+          <folding>
+            <element signature="n#style#0;n#span#0;n#p#0;n#div#3;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#form#0;n#div#4;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#div#0;n#form#0;n#div#4;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#2;n#div#0;n#form#0;n#div#4;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#3;n#div#0;n#form#0;n#div#4;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#p#3;n#div#0;n#form#0;n#div#4;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#2;n#p#3;n#div#0;n#form#0;n#div#4;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#4;n#div#0;n#form#0;n#div#4;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#5;n#div#0;n#form#0;n#div#4;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/boboite/css/contact-form.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/boboite/index.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="33" selection-start="803" selection-end="803" vertical-scroll-proportion="-7.92">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/homefeatured/homefeatured.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="13" selection-start="659" selection-end="659" vertical-scroll-proportion="-1.28">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/boboite/cms.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="0" selection-start="2789" selection-end="2789" vertical-scroll-proportion="-46.08">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/boboite/modules/homefeatured/homefeatured.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="14" selection-start="389" selection-end="389" vertical-scroll-proportion="-14.32">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/blockpermanentlinks/blockpermanentlinks.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="32" selection-start="54" selection-end="54" vertical-scroll-proportion="-0.64">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/blockuserinfo/blockuserinfo.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="193" selection-start="1076" selection-end="1261" vertical-scroll-proportion="-5.44">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#fieldset#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/boboite/header.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="137" selection-start="3929" selection-end="3929" vertical-scroll-proportion="0.93846154">
           <folding />
         </state>
       </provider>

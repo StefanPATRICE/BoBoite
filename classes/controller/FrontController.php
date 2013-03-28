@@ -742,6 +742,7 @@ class FrontControllerCore extends Controller
 		$this->addCSS(_THEME_CSS_DIR_.'normalize.css', 'all');
 		$this->addCSS(_THEME_CSS_DIR_.'home.css', 'all');
 		$this->addCSS(_THEME_CSS_DIR_.'font/brown-light.css', 'all');
+		$this->addCSS(_THEME_CSS_DIR_.'font/brown-regular.css', 'all');
 		$this->addCSS(_THEME_CSS_DIR_.'font/neutrafacetext-boldalt.css', 'all');
 		$this->addCSS(_THEME_CSS_DIR_.'font/neutrafacetext-demialt.css', 'all');
 		$this->addCSS(_THEME_CSS_DIR_.'font/neutrafacetext-lightalt.css', 'all');
