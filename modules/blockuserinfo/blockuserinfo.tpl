@@ -41,7 +41,123 @@
 				<a href="{$link->getPageLink('my-account', true)}" title="{l s='View my customer account' mod='blockuserinfo'}" class="account active" rel="nofollow">{l s='Mon compte' mod='blockuserinfo'}</a>
 				<a href="{$link->getPageLink($order_process, true)}" title="{l s='View my shopping cart' mod='blockuserinfo'}" rel="nofollow" class="shopping_cart">{l s='Mon panier' mod='blockuserinfo'}</a>
 			</div>
-            <div class="contentAjax"></div>
+            <div class="contentAjax"><script type="text/javascript">
+				// <![CDATA[
+				idSelectedCountry = false;
+				countries = new Array();
+				countriesNeedIDNumber = new Array();
+				countriesNeedZipCode = new Array();
+				$(function(){
+					$('.id_state option[value=]').attr('selected', true);
+				});
+				//]]>
+			</script>
+
+				<!--<h1>Identifiez-vous</h1>-->
+
+
+
+				<script type="text/javascript">
+
+					// $(document).ready(function(){
+					// 	// Retrocompatibility with 1.4
+					// 	if (typeof baseUri === "undefined" && typeof baseDir !== "undefined")
+					// 	baseUri = baseDir;
+					// 	$('#create-account_form').submit(function(){
+					// 		submitFunction();
+					// 		return false;
+					// 	});
+					// 	$('#SubmitCreate').click(function(){
+					// 		submitFunction();
+					// 	});
+					// });
+					// function submitFunction()
+					// {
+					// 	$('#create_account_error').html('').hide();
+					// 	//send the ajax request to the server
+					// 	$.ajax({
+					// 		type: 'POST',
+					// 		url: baseUri,
+					// 		async: true,
+					// 		cache: false,
+					// 		dataType : "json",
+					// 		data: {
+					// 			controller: 'authentication',
+					// 			SubmitCreate: 1,
+					// 			ajax: true,
+					// 			email_create: $('#email_create').val(),
+					// 			token: token
+					// 		},
+					// 		success: function(jsonData)
+					// 		{
+					// 			if (jsonData.hasError)
+					// 			{
+					// 				var errors = '';
+					// 				for(error in jsonData.errors)
+					// 					//IE6 bug fix
+					// 					if(error != 'indexOf')
+					// 						errors += '<li>'+jsonData.errors[error]+'</li>';
+					// 				$('#create_account_error').html('<ol>'+errors+'</ol>').show();
+					// 			}
+					// 			else
+					// 			{
+					// 				// adding a div to display a transition
+					// 				$('#center_column').html('<div id="noSlide">'+$('#center_column').html()+'</div>');
+					// 				$('#noSlide').fadeOut('slow', function(){
+					// 					$('#noSlide').html(jsonData.page);
+					// 					// update the state (when this file is called from AJAX you still need to update the state)
+					// 					bindStateInputAndUpdate();
+					// 				});
+					// 				$('#noSlide').fadeIn('slow');
+					// 				document.location = '#account-creation';
+					// 			}
+					// 		},
+					// 		error: function(XMLHttpRequest, textStatus, errorThrown)
+					// 		{
+					// 			alert("TECHNICAL ERROR: unable to load form.\n\nDetails:\nError thrown: " + XMLHttpRequest + "\n" + 'Text status: ' + textStatus);
+					// 		}
+					// 	});
+					// }
+
+				</script>
+				<!---->
+				<form action="http://tousenboite.gobelins-annecy.com/index.php?controller=authentication" method="post" id="create-account_form" class="std">
+					<fieldset>
+						<h3>Créez votre compte</h3>
+						<div class="form_content clearfix">
+							<p class="title_block">Saisissez votre adresse e-mail pour créer votre compte.</p>
+							<div class="error" id="create_account_error" style="display:none"></div>
+							<p class="text">
+								<label for="email_create">Adresse e-mail</label>
+								<span><input type="text" id="email_create" name="email_create" value="" class="account_input" /></span>
+							</p>
+							<p class="submit">
+								<input type="hidden" class="hidden" name="back" value="my-account" />					<input type="button" id="SubmitCreate" name="SubmitCreate" class="button_large" value="Créez votre compte" />
+								<input type="hidden" class="hidden" name="SubmitCreate" value="Créez votre compte" />
+							</p>
+						</div>
+					</fieldset>
+				</form>
+
+				<form action="http://tousenboite.gobelins-annecy.com/index.php?controller=authentication" method="post" id="login_form" class="std">
+					<fieldset>
+						<h3>Déjà enregistré ?</h3>
+						<div class="form_content clearfix">
+							<p class="text">
+								<label for="email">Adresse e-mail</label>
+								<span><input type="text" id="email" name="email" value="" class="account_input" /></span>
+							</p>
+							<p class="text">
+								<label for="passwd">Mot de passe</label>
+								<span><input type="password" id="passwd" name="passwd" value="" class="account_input" /></span>
+							</p>
+							<p class="lost_password"><a href="http://tousenboite.gobelins-annecy.com/index.php?controller=password">Mot de passe oublié ?</a></p>
+							<p class="submit">
+								<input type="hidden" class="hidden" name="back" value="my-account" />					<input type="submit" id="SubmitLogin" name="SubmitLogin" class="button" value="Identifiez-vous" />
+							</p>
+						</div>
+					</fieldset>
+				</form></div>
         </div>
 	</div>
 	<ul id="header_nav">

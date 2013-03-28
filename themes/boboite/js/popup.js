@@ -29,6 +29,8 @@ $(function () {
 	$("a.shopping_cart").click(function() {
 		$('#fond').stop(true, true).fadeIn(200);
 
+		$('#cart_block .remove_link a').html('X');
+
 		$('#header_user .popupboboite').stop(true, true).fadeOut(200);
 		$("#cart_block").stop(true, true).stop(true, true).fadeIn(200);
 		return false;
