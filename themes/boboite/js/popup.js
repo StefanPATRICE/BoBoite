@@ -6,7 +6,22 @@ $(function () {
 		$('#cart_block').stop(true, true).fadeOut(200);
 		$('#header_user .popupboboite').stop(true, true).fadeIn(200);
 
-		$().ajax($(this).attr('href')+'&ajax=1');
+		$.get($(this).attr('href') + '&ajax=1',
+			function(data) {
+				try
+				{
+					var response = jQuery.parseJSON(data);
+					console.log('at');
+					$('#header_user .popupboboite .contentAjax').html(response.page);
+				}
+				catch(err)
+				{
+					$.get('/index.php?controller=authentication&back=my-account&ajax=1',
+						function(data) {
+							$('#header_user .popupboboite .contentAjax').html(data.page);
+						}, "json");
+				}
+			});
 
 		return false;
 	});

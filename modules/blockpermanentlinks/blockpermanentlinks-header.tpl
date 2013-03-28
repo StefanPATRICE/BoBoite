@@ -24,14 +24,16 @@
 *}
 
 <!-- Block permanent links module HEADER -->
-<ul id="header_links">
-	<li id="header_link_contact"><a href="/index.php?id_product=1&controller=product" title="{l s='personnalisation' mod='blockpermanentlinks'}">{l s='Personnalisation' mod='blockpermanentlinks'}</a></li>
-	<li id="header_link_contact"><a href="{$link->getPageLink('contact', true)}" title="{l s='contact' mod='blockpermanentlinks'}">{l s='Témoignage' mod='blockpermanentlinks'}</a></li>
-    {*
-	<li id="header_link_sitemap"><a href="{$link->getPageLink('sitemap')}" title="{l s='sitemap' mod='blockpermanentlinks'}">{l s='sitemap' mod='blockpermanentlinks'}</a></li>
-	<li id="header_link_bookmark">
-		<script type="text/javascript">writeBookmarkLink('{$come_from}', '{$meta_title|addslashes|addslashes}', '{l s='bookmark' mod='blockpermanentlinks' js=1}');</script>
-	</li>
-    *}
-</ul>
+<div id="header_links">
+    <div>
+        <div id="header_link_contact"><a href="/index.php?id_product=1&controller=product" title="{l s='personnalisation' mod='blockpermanentlinks'}">{l s='Personnalisation' mod='blockpermanentlinks'}</a></div>
+        <div id="header_link_contact"><a href="{$link->getPageLink('contact', true)}" title="{l s='contact' mod='blockpermanentlinks'}">{l s='Témoignage' mod='blockpermanentlinks'}</a></div>
+        {*
+        <li id="header_link_sitemap"><a href="{$link->getPageLink('sitemap')}" title="{l s='sitemap' mod='blockpermanentlinks'}">{l s='sitemap' mod='blockpermanentlinks'}</a></li>
+        <li id="header_link_bookmark">
+            <script type="text/javascript">writeBookmarkLink('{$come_from}', '{$meta_title|addslashes|addslashes}', '{l s='bookmark' mod='blockpermanentlinks' js=1}');</script>
+        </li>
+        *}
+	</div>
+</div>
 <!-- /Block permanent links module HEADER -->
