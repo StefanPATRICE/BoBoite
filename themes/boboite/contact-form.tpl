@@ -24,3 +24,28 @@
 *}
 
 {capture name=path}{l s='Contact'}{/capture}
+
+<h1>Ils témoignent</h1>
+
+<div id="content-tem">
+	<div class="tem tem1">
+		<h2 style="margin-left: -15px;">Alexandre <span style="margin-left: 190px;">Moifor</span></h2>
+		<div class="separator-tem"></div>
+		<p class="content">Lorem ipsum Reprehenderit voluptate dolor nulla in nulla aute sunt qui cillum dolor veniam consequat in anim magna.<br/>
+		Lorem ipsum Dolore dolore amet laborum occaecat.</p>
+		<div class="separator-tem"></div>
+	</div>
+	<div class="tem tem2">
+		<h2 style="margin-left: 47px;">Robert <span style="margin-left: 128px;">Youila</span></h2>
+		<div class="separator-tem"></div>
+		<p class="content">Lorem ipsum Reprehenderit voluptate dolor nulla in nulla aute sunt qui cillum dolor veniam consequat in anim magna.</p>
+		<div class="separator-tem"></div>
+	</div>
+	<div class="tem tem3">
+		<h2 style="margin-left: 76px;">Marie <span style="margin-left: 97px;">Jouy</span></h2>
+		<div class="separator-tem"></div>
+		<p class="content">Lorem ipsum Reprehenderit voluptate dolor nulla in nulla aute sunt qui cillum dolor veniam consequat in anim magna.<br/>
+		Lorem ipsum Nulla irure eu adipisicing sed culpa officia et occaecat Duis commodo laborum nostrud.</p>
+		<div class="separator-tem"></div>
+	</div>
+</div>

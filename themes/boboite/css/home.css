@@ -159,3 +159,143 @@ input[type="button"], input[type="submit"], .lost_password a{
 
 
 
+<<<<<<< HEAD
+=======
+
+
+/* PRODUCT */
+
+/*#product #center_column{
+	background: url('../img/bg-custo.jpg') no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	margin-top: -15px;
+}
+
+#product h2{
+	color: #db9d86;
+	font-family: 'NeutrafaceTextBoldAlt';
+	font-size: 50px;
+	text-transform: uppercase;
+	margin-top: 0;
+	padding-top: 120px;
+	margin-left: 56px;
+	margin-bottom: 0;
+}
+
+.bar{
+	background: url('../img/bar.jpg');
+	width: 423px;
+	height: 41px;
+}
+
+.bar-color{
+	background: url('../img/bar-color.jpg');
+	width: 496px;
+	height: 40px;
+}
+
+.bar-texture{
+	background: url('../img/bar-texture.jpg');
+	width: 496px;
+	height: 40px;
+}
+
+.bar-forme{
+	background: url('../img/bar-form.jpg');
+	width: 496px;
+	height: 40px;
+}
+
+#product #pb-right-column{
+	position: absolute;
+	top: 80px;
+	right: 40px;
+}*/
+
+
+
+/* TEMOIGNAGES */
+
+#contact #page{
+	background: url('../img/bg-tem.jpg');
+	width: 100%;
+	height: 100%;
+}
+
+
+#contact h1{
+	margin-top: 0;
+	text-align: center;
+	padding-top: 60px;
+	margin-bottom: 0;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-family: 'NeutrafaceTextBoldAlt';
+	font-size: 50px;
+
+}
+
+
+#contact h2{
+	margin-top: 95px;
+	margin-bottom: 0;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-family: 'NeutrafaceTextLightAlt';
+	font-size: 33px;
+
+}
+
+#contact h2 span{
+	font-family: 'NeutrafaceTextBoldAlt';
+	margin-top: -5px;
+	display: block;
+	margin-left: 175px;
+
+}
+
+#contact #content-tem{
+	width: 1116px;
+	margin: auto;
+}
+
+#contact .tem{
+	width: 352px;
+	min-height: 403px;
+	float: left;
+	margin: 10px;
+}
+
+#contact .tem1{
+	background: url('../img/tem1.png') no-repeat;
+}
+
+#contact .tem2{
+	background: url('../img/tem2.png') no-repeat;
+}
+
+#contact .tem3{
+	background: url('../img/tem3.png') no-repeat;
+}
+
+#contact .tem p{
+	width: 250px;
+	text-align: justify;
+	color: #ffffff;
+	margin: auto!important;
+	font-size: 13px;
+	line-height: 18px;
+	font-family: 'BrownRegular';
+}
+
+#contact .tem .separator-tem{
+	width: 177px;
+	margin: auto;
+	border-bottom: 1px solid white;
+	margin-top: 38px;
+	margin-bottom: 25px;
+}
+
+>>>>>>> 86c36ff7e6609fd45312fd6023b136fe8a354884
