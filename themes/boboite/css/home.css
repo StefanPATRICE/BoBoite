@@ -69,21 +69,37 @@ body{
     transition: all 0.5s;
 }
 
+#text-content .text p{
+	font-family: 'BrownRegular';
+	font-size: 13px;
+	line-height: 15px;
+}
+
 #text-content .headline{
-	color: #e38720;
+	color: #5e6a9c;
 	font-family: 'NeutrafaceTextLightAlt';
-	font-size: 19px;
+	font-size: 23px;
 	text-transform: uppercase;
-	text-decoration: underline;
-	margin-top: 0;
+	margin-top: 20px;
+	margin-bottom: 20px;
 
 }
+
+#text-content .headline.green{
+	color: #337239;
+}
+
+#text-content .headline.pink{
+	color: #733f3f;
+}
+
+
 
 #container{
 	width: 100%;
 	height: 100%;
 	position: fixed;
-	background: #e4e1dc url('../img/bg.jpg');
+	/*background: #e4e1dc url('../img/bg.jpg');*/
 }
 
 .wrapper{
@@ -111,7 +127,44 @@ body{
 
 
 
+#bgs{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 0;
+	position: fixed;
+}
 
+#bgs .bg1{
+	height: 100%;
+	width: 100%;
+	background: url('../img/bg1.jpg');
+	position: absolute;
+	top: 0;
+	display: none;
+}
+
+#bgs .bg2{
+	height: 100%;
+	width: 100%;
+	background: url('../img/bg2.jpg');
+	position: absolute;
+	top: 0;
+	display: none;
+}
+
+#bgs .bg3{
+	height: 100%;
+	width: 100%;
+	background: url('../img/bg3.jpg');
+	position: absolute;
+	top: 0;
+	display: none;
+}
 
 
 /* MY ACCOUNT */
@@ -219,7 +272,7 @@ input[type="button"], input[type="submit"], .lost_password a{
 /* TEMOIGNAGES */
 
 #contact #page{
-	background: url('../img/bg-tem.jpg');
+	background: url('../img/bg-tem.jpg')!important;
 	width: 100%;
 	height: 100%;
 }
@@ -297,5 +350,3 @@ input[type="button"], input[type="submit"], .lost_password a{
 	margin-top: 38px;
 	margin-bottom: 25px;
 }
-
->>>>>>> 86c36ff7e6609fd45312fd6023b136fe8a354884

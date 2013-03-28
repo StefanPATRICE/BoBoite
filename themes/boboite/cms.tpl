@@ -30,7 +30,7 @@
 	<div class="text text_01 active" data-id="1"><h2>Feneborg présente ...</h2></div>
 	<div class="text text_02" data-id="2">
 		<h2>La Boboite</h2>
-		<p class="headline">Un nouvel univers de sensations intérieures</p>
+		<p class="headline green">Un nouvel univers de sensations intérieures</p>
 		<p>La Boboite vous permet de profiter de sensations intenses quel que soit l'endroit où vous êtes, à toute heure de la journée.</p>
 	</div>
 	<div class="text text_03" data-id="3"><h2>Un concept prouvé scientifiquement</h2></div>
@@ -44,7 +44,7 @@
 	</div>
 	<div class="text text_06" data-id="6">
 		<h2>1 - Personnalisez votre Boboite</h2>
-		<p class="headline">Une apparence qui vous est propre</p>
+		<p class="headline pink">Une apparence qui vous est propre</p>
 		<p>Choisissez dès l'achat l'apparence de votre Boboite. Votre style unique orientera tous les regards sur vous.</p>
 	</div>
 	<div class="text text_07" data-id="7">
@@ -52,7 +52,7 @@
 	</div>
 	<div class="text text_08" data-id="8">
 		<h2>3 - Profitez</h2>
-		<p class="headline">Un moment de sensations intenses</p>
+		<p class="headline pink">Un moment de sensations intenses</p>
 		<p>L'action de la Boboite sur votre organisme va réveiller chez vous des sensations enfouies.</p>
 	</div>
 	<div class="text text_09" data-id="9">
@@ -61,6 +61,12 @@
 	<div class="text text_10" data-id="10">
 		<h2>Simplement Boboite.</h2>
 	</div>
+</div>
+
+<div id="bgs">
+	<div class="bg1 background"></div>
+	<div class="bg2 background"></div>
+	<div class="bg3 background"></div>
 </div>
 
 <div id="container">

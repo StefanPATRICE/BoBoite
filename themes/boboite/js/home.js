@@ -1,7 +1,9 @@
 
 var nbImages = 143;
 var scrollPart = 100;
-var documentHeight = nbImages * scrollPart + $(window).height();;
+var documentHeight = nbImages * scrollPart + $(window).height();
+
+var step = 1;
 
 
 
@@ -10,9 +12,14 @@ $(document).ready(function(){
 	$('#product #center_column').css('height', $(document).height() - 45);
 	$('#contact #page').css('height', $(document).height() - 45);
 
+	$('#contact #page').css('background', 'url("http://tousenboite.gobelins-annecy.com/themes/boboite/img/bg-tem.jpg")');
+
 	if($('#cms').length > 0)
 	{
 		$('body').height(documentHeight);
+		$('#bgs').height(documentHeight);
+		$('.bg1').show();
+		$('#header_logo').css('background', '#d1dc9a');
 
 
 		for(var i = 0; i < 143; i++)
@@ -93,6 +100,29 @@ $(document).ready(function(){
 				$('.text[data-id="10"]').addClass('active');
 			else
 				$('.text[data-id="10"]').removeClass('active');
+
+
+			if(currentScroll < 37 && step != 1)
+			{
+				step = 1;
+				$('.background').fadeOut();
+				$('.bg1').fadeIn();
+				$('#header_logo').css('background', '#d1dc9a');
+			}
+			else if(currentScroll >= 37 && currentScroll < 63 && step != 2)
+			{
+				step = 2;
+				$('.background').fadeOut();
+				$('.bg2').fadeIn();
+				$('#header_logo').css('background', '#a9c7e5');
+			}
+			else if(currentScroll >= 63 && step != 3)
+			{
+				step = 3;
+				$('.background').fadeOut();
+				$('.bg3').fadeIn();
+				$('#header_logo').css('background', '#f3afaf');
+			}
 		});
 	}
 });
