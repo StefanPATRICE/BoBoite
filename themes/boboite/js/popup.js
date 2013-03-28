@@ -1,16 +1,26 @@
 $(function () {
 
 	$('a.account').click(function(){
-		console.log('a');
-		//$('#center_column').load($(this).attr('href'));
-		closePopup();
 		$('#fond').stop(true, true).fadeIn(200);
-		$('#header_user .popup').stop(true, true).fadeIn(200);
+
+		$('#cart_block').stop(true, true).fadeOut(200);
+		$('#header_user .popupboboite').stop(true, true).fadeIn(200);
+
+		$().ajax($(this).attr('href')+'&ajax=1');
+
 		return false;
 	});
 
-	function closePopup(){
-		$('.popup').fadeOut(200);
-	}
+	$("a.shopping_cart").click(function() {
+		$('#fond').stop(true, true).fadeIn(200);
 
+		$('#header_user .popupboboite').stop(true, true).fadeOut(200);
+		$("#cart_block").stop(true, true).stop(true, true).fadeIn(200);
+		return false;
+	});
+
+	$("#fond").click(function(){
+		$('.popupboboite').fadeOut(200);
+		$('#fond').fadeOut(200);
+	});
 });

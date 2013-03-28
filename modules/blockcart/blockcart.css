@@ -1,4 +1,4 @@
-#cart_block { display: none; float: right; }
+#cart_block { float: right; }
 
 #left_column #cart_block, #right_column #cart_block {
 }
@@ -14,8 +14,6 @@
 	background-repeat: no-repeat;
 	cursor: pointer
 }
-
-#cart_block .block_content { padding: 64px 16px 86px 16px;}
 
 #cart_block #cart_block_summary {display:none}
 #cart_block .quantity-formated {

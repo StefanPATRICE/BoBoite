@@ -658,37 +658,6 @@ $(document).ready(function(){
 	/* roll over cart */
 	var cart_block = new HoverWatcher('#cart_block');
 	var shopping_cart = new HoverWatcher('#shopping_cart');
-
-	$("#shopping_cart").click(
-		function() {
-			//nq_todo: supprimer le console log
-			console.log(1 	);
-			$("#cart_block").stop(true, true).fadeIn(200);
-			$('#fond').fadeIn(200);
-			return false;
-		});
-
-	//Quand on quitte
-	$("#fond").click(
-		function() {
-			$("#cart_block").stop(true, true).fadeOut(200).css('display', 'none');
-			$('#fond').fadeOut(200);
-		});
-
-
-	//nq_todo: delete
-	//$("#cart_block").stop(true, true).slideDown(450);
-	//nq_todo: delete
-
-	//Quand on quitte
-	$("#zakgnjerjgh").hover(
-		function() {
-			$('#shopping_cart a').css('border-radius', '3px');
-			setTimeout(function() {
-				if (!shopping_cart.isHoveringOver())
-					$("#header #cart_block").stop(true, true).slideUp(450);
-			}, 200);
-		});
 	
 	$('.delete_voucher').live('click', function() {
 		$.ajax({url:$(this).attr('href')});

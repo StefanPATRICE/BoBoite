@@ -42,18 +42,17 @@ var delete_txt = '{l s='Delete' mod='blockcart' js=1}';
 
 
 <!-- MODULE Block cart -->
-<div id="cart_block" class="block exclusive">
+<div id="cart_block" class="block exclusive popupboboite">
 	<p class="title_block">
 		<a href="{$link->getPageLink("$order_process", true)}" title="{l s='View my shopping cart' mod='blockcart'}" rel="nofollow">{l s='Cart' mod='blockcart'}</a>
 	</p>
-	<div class="block_content popup">
+	<div class="block_content">
         <div class="lien_haut_popup">
 		    <a href="{$link->getPageLink('my-account', true)}" title="{l s='View my customer account' mod='blockuserinfo'}" class="account" rel="nofollow">{l s='Mon compte' mod='blockuserinfo'}</a>
-			<a href="{$link->getPageLink($order_process, true)}" title="{l s='View my shopping cart' mod='blockuserinfo'}" rel="nofollow" class="active">{l s='Mon panier' mod='blockuserinfo'}</a>
+			<a href="{$link->getPageLink($order_process, true)}" title="{l s='View my shopping cart' mod='blockuserinfo'}" rel="nofollow" class="active shopping_cart">{l s='Mon panier' mod='blockuserinfo'}</a>
 		</div>
 	<!-- block summary -->
 	<div id="cart_block_summary" class="{if isset($colapseExpandStatus) && $colapseExpandStatus eq 'expanded' || !$ajax_allowed || !isset($colapseExpandStatus)}collapsed{else}expanded{/if}">
-        {*
 		<span class="ajax_cart_quantity" {if $cart_qties <= 0}style="display:none;"{/if}>{$cart_qties}</span>
 		<span class="ajax_cart_product_txt_s" {if $cart_qties <= 1}style="display:none"{/if}>{l s='products' mod='blockcart'}</span>
 		<span class="ajax_cart_product_txt" {if $cart_qties > 1}style="display:none"{/if}>{l s='product' mod='blockcart'}</span>
@@ -67,7 +66,6 @@ var delete_txt = '{l s='Delete' mod='blockcart' js=1}';
 			{/if}
 		</span>
 		<span class="ajax_cart_no_product" {if $cart_qties != 0}style="display:none"{/if}>{l s='(empty)' mod='blockcart'}</span>
-        *}
 	</div>
 	<!-- block list of products -->
 	<div id="cart_block_list" class="{if isset($colapseExpandStatus) && $colapseExpandStatus eq 'expanded' || !$ajax_allowed || !isset($colapseExpandStatus)}expanded{else}collapsed{/if}">
