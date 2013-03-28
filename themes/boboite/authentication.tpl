@@ -24,7 +24,6 @@
 *}
 
 {capture name=path}{l s='Login'}{/capture}
-{include file="$tpl_dir./breadcrumb.tpl"}
 
 <script type="text/javascript">
 // <![CDATA[
@@ -71,72 +70,72 @@ $(function(){ldelim}
 {/if}
 </script>
 
-<h1>{if !isset($email_create)}{l s='Log in'}{else}{l s='Create your account'}{/if}</h1>
+<!--<h1>{if !isset($email_create)}{l s='Log in'}{else}{l s='Create your account'}{/if}</h1>-->
 
 {include file="$tpl_dir./errors.tpl"}
 {assign var='stateExist' value=false}
 {if !isset($email_create)}
 	<script type="text/javascript">
 	{literal}
-	$(document).ready(function(){
-		// Retrocompatibility with 1.4
-		if (typeof baseUri === "undefined" && typeof baseDir !== "undefined")
-		baseUri = baseDir;
-		$('#create-account_form').submit(function(){
-			submitFunction();
-			return false;
-		});
-		$('#SubmitCreate').click(function(){
-			submitFunction();
-		});
-	});
-	function submitFunction()
-	{
-		$('#create_account_error').html('').hide();
-		//send the ajax request to the server
-		$.ajax({
-			type: 'POST',
-			url: baseUri,
-			async: true,
-			cache: false,
-			dataType : "json",
-			data: {
-				controller: 'authentication',
-				SubmitCreate: 1,
-				ajax: true,
-				email_create: $('#email_create').val(),
-				token: token
-			},
-			success: function(jsonData)
-			{
-				if (jsonData.hasError)
-				{
-					var errors = '';
-					for(error in jsonData.errors)
-						//IE6 bug fix
-						if(error != 'indexOf')
-							errors += '<li>'+jsonData.errors[error]+'</li>';
-					$('#create_account_error').html('<ol>'+errors+'</ol>').show();
-				}
-				else
-				{
-					// adding a div to display a transition
-					$('#center_column').html('<div id="noSlide">'+$('#center_column').html()+'</div>');
-					$('#noSlide').fadeOut('slow', function(){
-						$('#noSlide').html(jsonData.page);
-						// update the state (when this file is called from AJAX you still need to update the state)
-						bindStateInputAndUpdate();
-					});
-					$('#noSlide').fadeIn('slow');
-					document.location = '#account-creation';
-				}
-			},
-			error: function(XMLHttpRequest, textStatus, errorThrown)
-			{
-				alert("TECHNICAL ERROR: unable to load form.\n\nDetails:\nError thrown: " + XMLHttpRequest + "\n" + 'Text status: ' + textStatus);
-			}
-		});
-	}
+	// $(document).ready(function(){
+	// 	// Retrocompatibility with 1.4
+	// 	if (typeof baseUri === "undefined" && typeof baseDir !== "undefined")
+	// 	baseUri = baseDir;
+	// 	$('#create-account_form').submit(function(){
+	// 		submitFunction();
+	// 		return false;
+	// 	});
+	// 	$('#SubmitCreate').click(function(){
+	// 		submitFunction();
+	// 	});
+	// });
+	// function submitFunction()
+	// {
+	// 	$('#create_account_error').html('').hide();
+	// 	//send the ajax request to the server
+	// 	$.ajax({
+	// 		type: 'POST',
+	// 		url: baseUri,
+	// 		async: true,
+	// 		cache: false,
+	// 		dataType : "json",
+	// 		data: {
+	// 			controller: 'authentication',
+	// 			SubmitCreate: 1,
+	// 			ajax: true,
+	// 			email_create: $('#email_create').val(),
+	// 			token: token
+	// 		},
+	// 		success: function(jsonData)
+	// 		{
+	// 			if (jsonData.hasError)
+	// 			{
+	// 				var errors = '';
+	// 				for(error in jsonData.errors)
+	// 					//IE6 bug fix
+	// 					if(error != 'indexOf')
+	// 						errors += '<li>'+jsonData.errors[error]+'</li>';
+	// 				$('#create_account_error').html('<ol>'+errors+'</ol>').show();
+	// 			}
+	// 			else
+	// 			{
+	// 				// adding a div to display a transition
+	// 				$('#center_column').html('<div id="noSlide">'+$('#center_column').html()+'</div>');
+	// 				$('#noSlide').fadeOut('slow', function(){
+	// 					$('#noSlide').html(jsonData.page);
+	// 					// update the state (when this file is called from AJAX you still need to update the state)
+	// 					bindStateInputAndUpdate();
+	// 				});
+	// 				$('#noSlide').fadeIn('slow');
+	// 				document.location = '#account-creation';
+	// 			}
+	// 		},
+	// 		error: function(XMLHttpRequest, textStatus, errorThrown)
+	// 		{
+	// 			alert("TECHNICAL ERROR: unable to load form.\n\nDetails:\nError thrown: " + XMLHttpRequest + "\n" + 'Text status: ' + textStatus);
+	// 		}
+	// 	});
+	// }
 	{/literal}
 	</script>
 	<!--{if isset($authentification_error)}

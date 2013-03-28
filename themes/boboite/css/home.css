@@ -107,3 +107,53 @@ body{
 	top: 0px;
 	left: 0;
 }
+
+
+
+
+
+
+
+/* MY ACCOUNT */
+
+
+.popupblockuser h3{
+	font-family: 'NeutrafaceTextBoldAlt';
+	font-size: 25px;
+	text-transform: uppercase;
+	color: #dda48c;
+	margin-bottom: 0;
+}
+
+/*.popupblockuser h3{
+	color: #e38720;
+	font-family: 'NeutrafaceTextLightAlt';
+	font-size: 19px;
+	text-transform: uppercase;
+	text-decoration: underline;
+}*/
+
+label{
+	color: #989898;
+	font-family: 'NeutrafaceTextDemiAlt';
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+.popupblockuser #center_column{
+	text-align: center;
+}
+
+fieldset{
+	border: none;
+}
+
+input[type="button"], input[type="submit"], .lost_password a{
+	border: none;
+	background: none;
+	color: #989898;
+	font-family: 'NeutrafaceTextDemiAlt';
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
